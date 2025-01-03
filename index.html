@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,14 +130,38 @@
             margin-top: 2rem;
             font-size: 0.9rem;
         }
+
+        .about-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            border: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        .about-container h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: #0f2027;
+        }
+
+        .about-container p {
+            line-height: 1.8;
+            color: #555;
+            font-size: 1.1rem;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>My Project Showcase</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
             <a href="#">Projects</a>
             <a href="#">Contact</a>
         </nav>
@@ -169,6 +194,37 @@
                 <a href="#">View Project</a>
             </div>
         </div>
+    </div>
+
+    <footer>
+        &copy; 2025 My Portfolio | All Rights Reserved
+    </footer>
+</body>
+</html>
+
+<!-- About Page (about.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="about-container">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am a passionate developer with a love for creating impactful projects. With expertise in web development, design, and analytics, I aim to deliver meaningful solutions. Feel free to explore my projects and learn more about what I do.</p>
     </div>
 
     <footer>
