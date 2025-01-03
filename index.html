@@ -6,56 +6,126 @@
     <title>Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background: linear-gradient(to right, #e3f2fd, #f8bbd0);
             color: #333;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 1em 0;
+            background-color: #0288d1;
+            color: white;
             text-align: center;
+            padding: 2em 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        nav {
+            background: #01579b;
+            padding: 1em 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
         }
         section {
             padding: 2em;
-            max-width: 800px;
+            max-width: 1200px;
             margin: auto;
         }
-        h1, h2 {
+        .project {
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-bottom: 2em;
+            padding: 1.5em;
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .project h3 {
+            margin-top: 0;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #0288d1;
+            color: white;
             text-align: center;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-            padding: 10px;
-            background: #e4e4e4;
-            border-radius: 5px;
+            padding: 1.5em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Portfolio</h1>
+        <h1>Welcome to My Portfolio</h1>
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Describe yourself and your projects briefly here.</p>
-        <h2>Projects</h2>
+    <nav>
         <ul>
-            <li>
-                <h3>SQL & Power BI Project</h3>
-                <p>Analyzed logistics data using SQL and visualized results in Power BI. Charts include bar charts, pie charts, line charts, and KPIs.</p>
-            </li>
-            <li>
-                <h3>Other Projects</h3>
-                <p>Describe other projects you've worked on.</p>
-            </li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate data analyst with expertise in SQL, Power BI, and data visualization. I enjoy solving complex problems and turning raw data into actionable insights.
+        </p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>SQL & Power BI Logistics Analysis</h3>
+            <p>
+                Analyzed logistics data to identify late deliveries, shipment patterns, and revenue trends. Created visualizations such as bar charts, pie charts, line charts, and KPIs.
+            </p>
+            <img src="https://via.placeholder.com/600x400" alt="SQL & Power BI Project">
+        </div>
+        <div class="project">
+            <h3>Customer Sentiment Analysis</h3>
+            <p>
+                Developed a sentiment analysis dashboard using Python and Tableau to visualize customer feedback trends.
+            </p>
+            <img src="https://via.placeholder.com/600x400" alt="Customer Sentiment Analysis">
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            Feel free to reach out to me at:
+        </p>
+        <ul>
+            <li>Email: yourname@example.com</li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+            <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
         </ul>
     </section>
+    <footer>
+        &copy; 2025 Your Name. All Rights Reserved.
+    </footer>
 </body>
 </html>
+
